@@ -1,8 +1,5 @@
 {
-    "liveSassCompile.settings.forceBaseDirectory": "",
     "liveSassCompile.settings.formats": [
-        
-
         {
             "format": "expanded",
             "extensionName": ".css",
