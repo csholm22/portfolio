@@ -1,0 +1,14 @@
+{
+    "liveSassCompile.settings.forceBaseDirectory": "",
+    "liveSassCompile.settings.formats": [
+        
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "./css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "workbench.iconTheme": "vscode-icons",
+}
