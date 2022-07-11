@@ -6,16 +6,97 @@ html {
 
 @for $index from 1 through 6 {
     h#{$index} {
-        color:#444444;
+        color: #444444;
+        font-weight: 600;
     }
 }
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
 p {
     font-size: 1rem;
     line-height: 1.2;
 }
 
-.role {
+.sub-heading {
     font-size: 1rem;
     line-height: 1.2;
     display: block;
+    font-weight: 400;
+}
+
+
+.card {
+    background-color: #fafafa;
+    box-shadow: 0px 4px 8px 0px rgba(68, 68, 68, 0.4);
+    transition: box-shadow 300ms;
+    border-radius: .5rem;
+
+
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 8px 16px 4px rgba(68, 68, 68, 0.4);
+    }
+
+    .card-content {
+        padding: 1rem;
+        flex: 2;
+
+    }
+
+    .card-img {
+        flex: 1;
+        background-image: url("https://via.placeholder.com/200");
+        background-size: cover;
+        background-position: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #222222;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    h4 {
+        margin-bottom: 0;
+    }
+
+    ul {
+        margin-top: 0;
+        padding-left: 1.25rem;
+    }
+
+    li {
+        margin: .25rem 0;
+    }
+
+    p {
+        margin-top: .5rem;
+    }
+
+    @media screen and (max-width: 540px) {
+        .flex-row {
+        flex-direction: column ;
+       }
+
+       .card-img {
+        height: 200px;
+        flex: none;
+       }
+    }
+
+}
+
+.img-container {
+    display: flex;
+    justify-items: start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
