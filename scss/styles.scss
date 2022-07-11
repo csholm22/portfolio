@@ -53,6 +53,7 @@ p {
         background-image: url("https://via.placeholder.com/200");
         background-size: cover;
         background-position: center;
+        height: auto;
     }
 
     a {
@@ -83,20 +84,22 @@ p {
 
     @media screen and (max-width: 540px) {
         .flex-row {
-        flex-direction: column ;
-       }
+            flex-direction: column;
+        }
 
-       .card-img {
-        height: 200px;
-        flex: none;
-       }
+        .card-img {
+            height: 200px;
+            flex: none;
+        }
     }
 
 }
 
 .img-container {
     display: flex;
-    justify-items: start;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    img {
+        margin: .5rem;
+    }
 }

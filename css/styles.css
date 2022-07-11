@@ -69,6 +69,7 @@ p {
   background-image: url("https://via.placeholder.com/200");
   background-size: cover;
   background-position: center;
+  height: auto;
 }
 .card a {
   text-decoration: none;
@@ -102,7 +103,9 @@ p {
 
 .img-container {
   display: flex;
-  justify-items: start;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.img-container img {
+  margin: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */
