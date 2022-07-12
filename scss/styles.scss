@@ -50,7 +50,7 @@ p {
 
     .card-img {
         flex: 1;
-        background-image: url("https://via.placeholder.com/200");
+        background-image: url("/images/mnw-card.png");
         background-size: cover;
         background-position: center;
         height: auto;
@@ -98,8 +98,15 @@ p {
 .img-container {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
     img {
         margin: .5rem;
+        width: auto;
+        height: auto;
     }
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }
