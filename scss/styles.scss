@@ -30,10 +30,10 @@ p {
 }
 
 .sub-heading {
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.2;
     display: block;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 
@@ -104,14 +104,18 @@ p {
 }
 
 .img-container {
+    max-width: 1080px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     img {
         margin: .5rem;
         width: auto;
         height: auto;
+    }
+    @media screen and (max-width: 540px) {
+        justify-content: space-evenly;
     }
 }
 
