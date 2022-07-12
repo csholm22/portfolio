@@ -4,6 +4,11 @@ html {
     color: #222222;
 }
 
+
+header, main {
+    padding: 0 4rem;
+}
+
 @for $index from 1 through 6 {
     h#{$index} {
         color: #444444;
