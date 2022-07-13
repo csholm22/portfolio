@@ -1,3 +1,5 @@
+@use 'carousel.scss';
+
 html {
     font-size: 16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -10,19 +12,24 @@ body {
 }
 
 
-header, main {
+header,
+main {
     max-width: 1280px;
     padding: 0 4rem;
+
     @media screen and (max-width: 540px) {
         padding: 0 2rem;
     }
 }
 
-@for $index from 1 through 6 {
-    h#{$index} {
-        color: #444444;
-        font-weight: 600;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #444444;
+    font-weight: 600;
 }
 
 .flex-row {
@@ -115,11 +122,13 @@ p {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
     img {
         margin: .5rem;
         width: auto;
         height: auto;
     }
+
     @media screen and (max-width: 540px) {
         justify-content: space-evenly;
     }
@@ -128,3 +137,46 @@ p {
 .mb-0 {
     margin-bottom: 0;
 }
+
+
+blockquote {
+    margin: 0;
+     h2,
+    h3 {
+        text-align: center;
+    }
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+
+figcaption {
+    text-align: center;
+}
+
+
+.testimonial-container {
+    display: flex;
+    overflow-y: auto;
+
+    figure {
+        width: 100%;
+        min-width: 540px;
+    }
+}
+
+
+
+
