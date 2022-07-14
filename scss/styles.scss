@@ -8,7 +8,6 @@ html {
 
 body {
     margin: 0 auto;
-    width: fit-content;
 }
 
 
@@ -30,6 +29,7 @@ h5,
 h6 {
     color: #444444;
     font-weight: 600;
+    text-align: center;
 }
 
 .flex-row {
@@ -82,12 +82,9 @@ p {
         color: #222222;
     }
 
-    h3 {
-        margin: 0;
-    }
-
-    h4 {
+    h3,h4 {
         margin-bottom: 0;
+        text-align: left;
     }
 
     ul {
