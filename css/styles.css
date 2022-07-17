@@ -152,4 +152,12 @@ figcaption {
 
 .contact {
   text-align: center;
+}
+
+.hero {
+  flex: 1;
+  background-image: url("../images/mnw-card.png");
+  background-size: cover;
+  background-position: center;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */
