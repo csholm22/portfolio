@@ -13,7 +13,7 @@ body {
 
 header,
 main {
-    max-width: 1280px;
+    max-width: 768px;
     padding: 0 4rem;
     margin: 0 auto;
 
@@ -72,7 +72,7 @@ p {
 
     .card-img {
         flex: 1;
-        background-image: url("../images/mnw-card.png");
+        background-image: url("../images/MNW_CS/mnw-card.png");
         background-size: cover;
         background-position: center;
         height: auto;
@@ -178,10 +178,20 @@ figcaption {
 
 .hero {
     flex: 1;
-    background-image: url("../images/mnw-card.png");
+    background-image: url("../images/MNW_CS/mnw-card.png");
     background-size: cover;
     background-position: center;
     height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: fit-content;
+
+}
+
+.half-size {
+    max-width: 50%;
 }
 
 
